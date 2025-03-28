@@ -11,6 +11,8 @@ class User < ApplicationRecord
   validates :gender, inclusion: { in: %w[Male Female Other], message: 'is not valid' }
   validate :date_of_birth_in_the_past
 
+  has_many :books, dependent: :destroy
+
   # Custom validation
   def date_of_birth_in_the_past
     return if date_of_birth.blank?
