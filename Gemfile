@@ -20,7 +20,7 @@ gem "bcrypt", "~> 3.1.7"
 
   
 # Additional helpful testing gems
-gem 'faker', '~> 2.19'           # For generating random test data
+gem 'faker', '~> 3.5'            # For generating random test data
 gem 'database_cleaner-active_record' # For cleaning the test database
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ windows jruby ]
